@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BluePeak Realty — Find Your Next Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">BP</span>
+        <span class="brand-name">BluePeak Realty</span>
+      </a>
+      <nav class="nav">
+        <a href="#listings">Listings</a>
+        <a href="#about">About</a>
+        <a href="#agents">Agents</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact" class="btn btn-primary">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="assets/images/hero.svg" alt="Neighborhood skyline hero image" />
+    <div class="hero-overlay">
+      <h1>Your next chapter starts here.</h1>
+      <p>Browse hand-picked homes, condos, and rentals across the city.</p>
+      <form class="search">
+        <input type="search" placeholder="Search by city, neighborhood, or keyword" />
+        <select>
+          <option value="">Any Type</option>
+          <option>House</option>
+          <option>Apartment</option>
+          <option>Condo</option>
+        </select>
+        <select>
+          <option value="">Any Status</option>
+          <option>For Sale</option>
+          <option>For Rent</option>
+        </select>
+        <button class="btn btn-primary">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Featured Listings -->
+  <section class="section" id="listings">
+    <div class="container">
+      <h2>Featured Listings</h2>
+      <div class="grid cards">
+        <article class="card">
+          <img src="assets/images/prop-modern-loft.svg" alt="Modern loft" />
+          <h3>Modern Loft in Downtown</h3>
+          <p>2 Bed • 2 Bath • 1,250 sqft</p>
+          <p class="price">$520,000</p>
+        </article>
+        <article class="card">
+          <img src="assets/images/prop-family-villa.svg" alt="Family villa" />
+          <h3>Spacious Family Villa</h3>
+          <p>4 Bed • 3 Bath • 2,400 sqft</p>
+          <p class="price">$2,300 / mo</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section alt" id="about">
+    <div class="container">
+      <h2>Built on trust, powered by results.</h2>
+      <p>BluePeak Realty is a boutique real estate agency helping buyers, sellers, and renters find their perfect place.</p>
+    </div>
+  </section>
+
+  <!-- Agents -->
+  <section class="section" id="agents">
+    <div class="container">
+      <h2>Our Agents</h2>
+      <div class="grid agents">
+        <article class="agent-card">
+          <img src="assets/images/agent-1.svg" alt="Agent A" />
+          <h3>Jordan Patel</h3>
+        </article>
+        <article class="agent-card">
+          <img src="assets/images/agent-2.svg" alt="Agent B" />
+          <h3>Amara Chen</h3>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section alt" id="testimonials">
+    <div class="container">
+      <h2>What clients are saying</h2>
+      <blockquote>“Professional, responsive, and kind. We love our new home!”</blockquote>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Get in touch</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Message"></textarea>
+        <button class="btn btn-primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> BluePeak Realty</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
