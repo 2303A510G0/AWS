@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>University Tech Symposium 2025</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="National-level technical symposium - schedule, speakers, registration, venue and contact." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">UniTechSymposium</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#venue">Venue</a></li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>National Technical Symposium 2025</h1>
+          <p class="lead">Bringing together students, researchers and industry experts to share ideas, projects and innovations.</p>
+          <p class="meta">Date: <strong>Oct 20–22, 2025</strong> • Venue: University Convention Center</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#register">Register Now</a>
+            <a class="btn outline" href="#schedule">View Schedule</a>
+          </div>
+        </div>
+        <div class="hero-media" aria-hidden="true">
+          <img src="https://via.placeholder.com/560x350.png?text=Conference+Hero+Image" alt="Conference illustration">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2 class="section-title">About the Symposium</h2>
+      <p>
+        The University Tech Symposium is a national-level event that connects students, researchers and professionals.
+        Expect keynote talks, technical sessions, poster presentations, workshops, and networking opportunities.
+      </p>
+    </section>
+
+    <section id="schedule" class="container section">
+      <h2 class="section-title">Schedule (Preview)</h2>
+      <div class="schedule-grid">
+        <article class="schedule-day">
+          <h3>Day 1 — Oct 20</h3>
+          <ul>
+            <li><strong>09:00</strong> — Registration & Opening</li>
+            <li><strong>10:00</strong> — Keynote: Future of AI</li>
+            <li><strong>13:00</strong> — Technical Sessions</li>
+          </ul>
+        </article>
+        <article class="schedule-day">
+          <h3>Day 2 — Oct 21</h3>
+          <ul>
+            <li><strong>09:30</strong> — Workshops</li>
+            <li><strong>11:30</strong> — Panel Discussion</li>
+            <li><strong>15:00</strong> — Poster Session</li>
+          </ul>
+        </article>
+        <article class="schedule-day">
+          <h3>Day 3 — Oct 22</h3>
+          <ul>
+            <li><strong>10:00</strong> — Industry Talks</li>
+            <li><strong>13:00</strong> — Awards & Closing</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="speakers" class="container section">
+      <h2 class="section-title">Featured Speakers</h2>
+      <div class="speakers-grid">
+        <figure class="speaker">
+          <img src="https://via.placeholder.com/220x220.png?text=Speaker+1" alt="Speaker 1">
+          <figcaption>
+            <strong>Dr. A. Kumar</strong>
+            <span>AI Researcher, XYZ Labs</span>
+          </figcaption>
+        </figure>
+        <figure class="speaker">
+          <img src="https://via.placeholder.com/220x220.png?text=Speaker+2" alt="Speaker 2">
+          <figcaption>
+            <strong>Prof. S. Mehta</strong>
+            <span>Department of Computer Science</span>
+          </figcaption>
+        </figure>
+        <figure class="speaker">
+          <img src="https://via.placeholder.com/220x220.png?text=Speaker+3" alt="Speaker 3">
+          <figcaption>
+            <strong>Ms. R. Patel</strong>
+            <span>CTO, Innovative Tech</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="venue" class="container section">
+      <h2 class="section-title">Venue & Travel</h2>
+      <div class="venue-grid">
+        <div>
+          <p><strong>University Convention Center</strong><br />123 Campus Road, City, State</p>
+          <p>Public transport links, nearby hotels and parking information will be posted soon.</p>
+        </div>
+        <div class="map-embed">
+          <img src="https://via.placeholder.com/480x240.png?text=Map+Placeholder" alt="Map placeholder">
+        </div>
+      </div>
+    </section>
+
+    <section id="register" class="container section register">
+      <h2 class="section-title">Register</h2>
+      <p>Fill the form to register. Group discounts and student scholarships available.</p>
+
+      <form class="reg-form" action="#" method="POST" onsubmit="alert('This is a demo form — replace action with your backend.'); return false;">
+        <label>
+          Full name
+          <input type="text" name="name" required placeholder="Your full name">
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required placeholder="you@example.com">
+        </label>
+        <label>
+          Affiliation
+          <input type="text" name="affiliation" placeholder="University / Company">
+        </label>
+        <label>
+          Registration type
+          <select name="type" required>
+            <option>Student — INR 500</option>
+            <option>Academic — INR 1000</option>
+            <option>Industry — INR 2000</option>
+          </select>
+        </label>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Submit Registration</button>
+          <button class="btn outline" type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="contact" class="container section contact">
+      <h2 class="section-title">Contact</h2>
+      <p>Questions? Email the organizing team at <a href="mailto:symposium@university.edu">symposium@university.edu</a> or call +91-98XXXXYYYY.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 University Tech Symposium — Organized by Department of Computer Science</p>
+      <p class="small">Follow updates on <a href="#">Instagram</a> • <a href="#">Twitter</a> • <a href="#">LinkedIn</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const navToggle = document.getElementById('nav-toggle');
+    const navList = document.getElementById('nav-list');
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', !expanded);
+      navList.classList.toggle('open');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
